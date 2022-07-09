@@ -2,6 +2,8 @@ package io.github.mo.novel.dto.resp;
 
 
 import io.swagger.v3.oas.annotations.media.Schema;
+import lombok.Builder;
+import lombok.Data;
 
 /**
  *
@@ -9,6 +11,8 @@ import io.swagger.v3.oas.annotations.media.Schema;
  * @author mo
  * @date 2022/7/9 16:02
  */
+@Data
+@Builder
 public class ImgVerifyCodeRespDto {
     /**
      * 当前会话ID，用于标识该图形验证码属于哪个会话
